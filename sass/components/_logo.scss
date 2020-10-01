@@ -1,0 +1,26 @@
+/* Лого */
+
+.logo {
+    margin-right: 93px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+  
+    color: $primary-black-color;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+
+    & .accent {
+      color: $link-color;
+    }
+  }
+  
+  .accent.inverse {
+    color: $primary-white-color;
+  }
+  
+  .content-box .logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }

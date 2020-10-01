@@ -1,0 +1,129 @@
+/* Форма */
+.form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $primary-gray-color;
+  }
+  
+  .form-input-comment {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 4px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+  
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline: none;
+      border: 1px solid $link-color;
+    }
+  }
+  
+  .form-field-comment {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $primary-gray-color;
+  }
+  
+  .form-icon {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+  }
+  
+  .form-input:focus + .form-icon {
+    fill: $link-color;
+  }
+  
+  .form-input {
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    padding-left: 42px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+  
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline: none;
+      border: 1px solid $link-color;
+    }
+  }
+  
+  .checkbox-label {
+    padding-left: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    
+    border: 1px solid $primary-black-color;
+    background-color: $primary-white-color;
+    border-radius: 2px;
+  }
+  
+  .checkbox:checked + .checkbox-icon {
+    background-color: $link-color;
+    border-color: $link-color;
+    background-image: url(../images/svg/form-full-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+  
+  .checkbox-text {
+    color: $primary-gray-color;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  
+  .form-link {
+    font-size: 14px;
+    line-height: 1.7;
+    color: $link-color;
+  }
+  
+  .form-btn {
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 55px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    background-color: #188CE8;
+    
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    &:active {
+      outline:none;
+    }
+  }
+
+  

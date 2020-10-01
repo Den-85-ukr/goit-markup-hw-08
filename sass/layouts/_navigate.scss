@@ -1,0 +1,62 @@
+/* nav */
+
+.main-nav {
+    display: flex;
+    margin-right: auto;
+  }
+  
+  .menu-item .link {
+    display: inline-flex;
+  }
+  
+  .menu-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .site-nav .link {
+    color: $primary-black-color;
+    text-decoration: none;
+  
+    &:hover,
+    &:focus {
+    color: $link-color;
+    }
+  }
+  
+.site-nav {
+    display: flex;
+    align-items: center;
+
+    & .link.current {
+      position: relative;
+      color: $link-color;
+      text-decoration: none;
+    }
+    
+    & .link.current::after {
+      content: "";
+      position: absolute;
+      bottom: -33px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $link-color;
+    }
+}
+  
+.auth-nav .link {
+    color: var(--primary-grey-color);
+    text-decoration: none;
+  
+  &:hover,
+  &:focus {
+    color: $link-color;
+  }
+}
+  
+.auth-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
