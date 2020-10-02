@@ -1,9 +1,7 @@
 /* Фильтры-кнопки */
 
 .filters-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredFlex();
   margin-top: 94px;
 
   .link.current {
@@ -53,9 +51,6 @@
   display: flex;
   flex-wrap: wrap;
 
-  a {
-    text-decoration: none;
-  }
   .portfolio-title {
     color: $primary-black-color;
     font-weight: 700;
@@ -101,11 +96,11 @@
    }
   }
 
-  .portfolio-item {
+.portfolio-item {
 
-    &:hover .portfolio-description {
-      opacity: 1;
-      }
+  &:hover .portfolio-description {
+    opacity: 1;
+    }
 
     &:hover .portfolio-overlay,
     &:focus .portfolio-overlay {

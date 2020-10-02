@@ -328,6 +328,7 @@ img {
 }
 
 .link {
+  text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -574,18 +575,23 @@ img {
 }
 
 .page-header .flexbox {
-  justify-content: flex-end;
   align-items: center;
 }
 
 /* nav */
+.nav-box {
+  display: none;
+}
+
 .main-nav {
   display: flex;
   margin-right: auto;
 }
 
 .menu-item .link {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-item:not(:last-child) {
@@ -604,6 +610,7 @@ img {
 .site-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .site-nav .link.current {
@@ -695,8 +702,8 @@ img {
 
 .features-iconbox {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -881,8 +888,8 @@ img {
 
 .clients-link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
   padding: 0;
@@ -953,10 +960,6 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.portfolio-list a {
-  text-decoration: none;
 }
 
 .portfolio-list .portfolio-title {
@@ -1093,14 +1096,14 @@ footer {
 
 .follow-list {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .follow-link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   padding: 0;
@@ -1161,6 +1164,7 @@ footer {
 .footer-form-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 13px 28px;
   margin: 0;
   height: 50px;

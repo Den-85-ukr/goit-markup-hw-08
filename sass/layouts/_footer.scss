@@ -52,15 +52,17 @@
   }
   
   .follow-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex();
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
   }
   
   .follow-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex();
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     width: 44px;
     height: 44px;
     padding: 0;
@@ -122,8 +124,9 @@
   }
   
   .footer-form-btn {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
+    // display: flex;
+    // align-items: center;
     padding: 13px 28px;
     margin: 0;
     height: 50px;
