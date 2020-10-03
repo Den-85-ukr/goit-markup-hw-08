@@ -1,26 +1,29 @@
 /* Лого */
 
 .logo {
-    margin-right: 93px;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: block;
-  
-    color: $primary-black-color;
-    font-family: "Raleway-Bold", sans-serif;
-    font-size: 26px;
-    text-decoration: none;
+  margin-right: 93px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
 
-    & .accent {
-      color: $link-color;
-    }
+  color: $primary-black-color;
+  font-family: "Raleway-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  & .accent {
+    color: $link-color;
   }
-  
-  .accent.inverse {
-    color: $primary-white-color;
-  }
-  
-  .content-box .logo {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
+}
+
+.accent.inverse {
+  color: $primary-white-color;
+}
+
+.content-box .logo {
+  margin-right: 0;
+  margin-bottom: 20px;
+}

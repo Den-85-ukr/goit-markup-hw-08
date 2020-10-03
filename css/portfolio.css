@@ -17,6 +17,7 @@ Use a better box model (opinionated).
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: 1px solid tomato;
 }
 
 /**
@@ -98,7 +99,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -182,9 +183,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -237,7 +238,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -312,7 +313,6 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -340,7 +340,10 @@ img {
   display: block;
   color: #212121;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 26px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -358,18 +361,14 @@ img {
 }
 
 .page-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #ffffff;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
-}
-
-.page-header .flexbox {
-  align-items: center;
 }
 
 /* nav */
@@ -579,8 +578,6 @@ footer {
 .content-box {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  align-items: baseline;
 }
 
 .follow-box {
@@ -657,18 +654,6 @@ footer {
 }
 
 /* Форма */
-.footer-form {
-  display: flex;
-  align-items: flex-end;
-  margin: 0;
-  width: 570px;
-}
-
-.footer-form-field {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer-form-icon {
   margin-left: 10px;
 }

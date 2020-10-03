@@ -1,57 +1,57 @@
 /* Особенности-features */
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
 
   .title {
-    margin: 0 0 10px 0;
-  
+    // margin: 0 0 10px 0;
+
     color: $primary-black-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
   }
-  
+
   .text {
-    margin: 0;
-  
+    // margin: 0;
+
     color: $primary-gray-color;
     font-size: 14px;
     line-height: 1.7;
+    text-align: center;
   }
 }
 
 .features-iconbox {
   @include centeredFlex();
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  margin-bottom: 30px;
-  width: 270px;
+
+  // margin-bottom: 30px;
+  width: 450px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
 }
 
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-}
+// .features-list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
-.features-item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
-  margin-bottom: 30px;
+// .features-item {
+//   width: calc((100% - 30px * 3) / 4);
+//   margin-right: 30px;
+//   margin-bottom: 30px;
 
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
-  
-  &:nth-last-child(-n + 4) {
-    margin-bottom: 0;
-  }
-}
+//   &:nth-child(4n) {
+//     margin-right: 0;
+//   }
+
+//   &:nth-last-child(-n + 4) {
+//     margin-bottom: 0;
+//   }
+// }
 
 .features-icon {
   width: 70px;

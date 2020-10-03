@@ -13,25 +13,26 @@
   <body>
     <!-- Шапка сайта -->
     <header class="page-header">
-      <div class="container flexbox">
-        <a href="index.html" lang="en" class="logo"><span class="accent">Web</span>Studio
+      <div class="container">
+        <a href="index.html" lang="en" class="logo"
+          ><span class="accent">Web</span>Studio
         </a>
-        <div class="nav-box">
-        <nav class="main-nav">
-          
+        <div class="nav-box flexbox">
+          <nav class="main-nav">
             <ul class="list site-nav">
-            <li class="menu-item">
-              <a href="./index.html" class="link current">Студия</a>
-            </li>
-            <li class="menu-item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="menu-item"><a href="" class="link">Контакты</a></li>
-          </ul> 
-          </nav> 
+              <li class="menu-item">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="menu-item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="menu-item"><a href="" class="link">Контакты</a></li>
+            </ul>
+          </nav>
           <ul class="list auth-nav flexbox">
             <li class="menu-item">
-              <a href="mailto:info@devstudio.com" class="link"><svg class="auth-icon" width="16" height="12">
+              <a href="mailto:info@devstudio.com" class="link"
+                ><svg class="auth-icon" width="16" height="12">
                   <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com
@@ -51,12 +52,14 @@
     </header>
     <main>
       <!-- Главный контейнер -->
-
-      <section class="hero">
+      <section class="container hero">
         <!-- Герой! -->
         <div class="hero-content">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <a href="#" class="button" data-modal-open>Заказать услугу</a>
+          <button tupe="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
+          <!-- <a href="#" class="button" data-modal-open>Заказать услугу</a> -->
         </div>
       </section>
 
@@ -161,11 +164,23 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-item">
-              <img
-                src="./images/product-designer.jpg"
-                width="270"
-                alt="Фото дизайнера продукта"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/mini/product-designer.webp    1x,
+                    ./images/mobile/mini/product-designer.webp@2x 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/mobile/mini/product-designer.jpg    1x,
+                    ./images/mobile/mini/product-designer.jpg@2x 2x
+                  "
+                  src="./images/mobile/mini/product-designer.jpg"
+                  alt="Фото дизайнера продукта"
+                />
+              </picture>
               <h3 class="name">Игорь Демьяненко</h3>
               <p lang="en" class="biz">Product Designer</p>
               <ul class="list follow-list">
@@ -351,6 +366,7 @@
           </ul>
         </div>
       </section>
+
       <!-- Клиенты -->
       <section class="section clients">
         <div class="container">
@@ -402,6 +418,7 @@
         </div>
       </section>
     </main>
+
     <!-- Футер -->
     <footer>
       <div class="container content-box">
@@ -466,7 +483,7 @@
               placeholder="E-mail"
             />
           </div>
-          <button class="footer-form-btn">
+          <button tupe="button" class="footer-form-btn">
             <span>Подписаться</span
             ><svg class="footer-form-icon" height="24" width="24">
               <use href="./images/svg/symbol-defs.svg#icon-icon-send"></use>
@@ -530,6 +547,8 @@
         </form>
       </div>
     </div>
+
+    <!-- Скрипты -->
     <script src="./js/model-script.js"></script>
   </body>
 </html>
