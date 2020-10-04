@@ -1003,14 +1003,11 @@ footer {
 .content-box {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.follow-box {
-  margin-left: 70px;
-  margin-right: 93px;
+  text-align: center;
 }
 
 .adds {
+  margin-bottom: 60px;
   color: #ffffff;
   font-size: 14px;
   line-height: 1.7;
@@ -1019,8 +1016,7 @@ footer {
 }
 
 .adds-text {
-  margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .auth-footer {
@@ -1028,7 +1024,10 @@ footer {
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
-  font-style: normal;
+}
+
+.auth-footer.mail {
+  margin-bottom: 8px;
 }
 
 .follow-title {
@@ -1079,6 +1078,10 @@ footer {
 }
 
 /* Форма */
+.footer-form {
+  text-align: center;
+}
+
 .footer-form-icon {
   margin-left: 10px;
 }
@@ -1087,8 +1090,8 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1101,8 +1104,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: 13px 28px;
-  margin: 0;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
