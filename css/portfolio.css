@@ -99,7 +99,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -315,12 +315,36 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+  }
 }
 
 .flexbox {
@@ -334,16 +358,12 @@ img {
 
 /* Лого */
 .logo {
-  margin-right: 93px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   display: block;
   color: #212121;
   font-family: "Raleway-Bold", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -361,34 +381,43 @@ img {
 }
 
 .page-header {
+  position: fixed;
+  width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: #ffffff;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
 }
 
 /* nav */
-.nav-box {
-  display: none;
-}
-
 .main-nav {
-  display: flex;
-  margin-right: auto;
-}
-
-.menu-item .link {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0;
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 50px;
+.menu-container {
+  padding: 60px 15px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
+  .menu-container.is-open {
+    display: block;
+  }
 }
 
 .site-nav .link {
@@ -398,12 +427,6 @@ img {
 
 .site-nav .link:hover, .site-nav .link:focus {
   color: #2196f3;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .site-nav .link.current {

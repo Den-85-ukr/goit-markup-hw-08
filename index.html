@@ -13,63 +13,67 @@
   <body>
     <!-- Шапка сайта -->
     <header class="page-header">
-      <div class="container flexbox">
-        <a href="index.html" lang="en" class="logo"
-          ><span class="accent">Web</span>Studio
-        </a>
-        <button
-          type="button"
-          class="menu-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
+      <div class="container">
+        <nav class="main-nav flexbox">
+          <a href="index.html" lang="en" class="logo"
+            ><span class="accent">Web</span>Studio
+          </a>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
           >
-            <use
-              class="icon-cross"
-              href="./images/svg/symbol-defs.svg#cross"
-            ></use>
-            <use
-              class="icon-menu"
-              href="./images/svg/symbol-defs.svg#menu"
-            ></use>
-          </svg>
-        </button>
-        <div class="nav-box flexbox">
-          <nav class="main-nav">
-            <ul class="list site-nav">
-              <li class="menu-item">
-                <a href="./index.html" class="link current">Студия</a>
-              </li>
-              <li class="menu-item">
-                <a href="./portfolio.html" class="link">Портфолио</a>
-              </li>
-              <li class="menu-item"><a href="" class="link">Контакты</a></li>
-            </ul>
-          </nav>
-          <ul class="list auth-nav flexbox">
-            <li class="menu-item">
-              <a href="mailto:info@devstudio.com" class="link"
-                ><svg class="auth-icon" width="16" height="12">
-                  <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="tel:+380961111111" class="link">
-                <svg class="auth-icon" width="10" height="16">
-                  <use href="./images/svg/symbol-defs.svg#icon-tel"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </div>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/svg/symbol-defs.svg#cross"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/svg/symbol-defs.svg#menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container is-open" id="menu-container" data-menu>
+            <div class="nav-box">
+              <ul class="list site-nav">
+                <li class="menu-item">
+                  <a href="./index.html" class="link current">Студия</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./portfolio.html" class="link">Портфолио</a>
+                </li>
+                <li class="menu-item"><a href="" class="link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="contacts-box">
+              <ul class="list auth-nav flexbox">
+                <li class="menu-item">
+                  <a href="mailto:info@devstudio.com" class="link"
+                    ><svg class="auth-icon" width="16" height="12">
+                      <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="tel:+380961111111" class="link">
+                    <svg class="auth-icon" width="10" height="16">
+                      <use href="./images/svg/symbol-defs.svg#icon-tel"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -186,7 +190,11 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-item">
-              <picture>
+              <img
+                src="./images/mobile/mini/product-designer.jpg"
+                alt="Фото дизайнера продукта"
+              />
+              <!-- <picture>
                 <source
                   srcset="
                     ./images/mobile/mini/product-designer.webp    1x,
@@ -202,7 +210,7 @@
                   src="./images/mobile/mini/product-designer.jpg"
                   alt="Фото дизайнера продукта"
                 />
-              </picture>
+              </picture> -->
               <h3 class="name">Игорь Демьяненко</h3>
               <p lang="en" class="biz">Product Designer</p>
               <ul class="list follow-list">
@@ -608,5 +616,6 @@
 
     <!-- Скрипты -->
     <script src="./js/model-script.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
