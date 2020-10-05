@@ -99,7 +99,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -642,7 +642,7 @@ img {
 .hero {
   margin-right: auto;
   margin-left: auto;
-  padding: 118px 20px;
+  padding: 118px 60px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bcg-mini.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -691,7 +691,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 450px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
