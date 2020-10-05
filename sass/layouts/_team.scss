@@ -1,18 +1,18 @@
 /* Наша команда */
 .team {
-  padding-top: 94px;
+  padding-top: 60px;
 
   background-color: #f5f4fa;
 
   .title {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 50px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-top: 0;
+    // margin-bottom: 50px;
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
   }
 
@@ -31,14 +31,15 @@
   }
 }
 
-.team-list {
-  display: flex;
-}
+// .team-list {
+//   display: flex;
+// }
 
 .team-item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  // width: calc((100% - 30px * 3) / 4);
+  // margin-right: 30px;
+  // margin-bottom: 30px;
+  padding-bottom: 26px;
 
   background-color: $primary-white-color;
 
@@ -47,13 +48,13 @@
 
   border-radius: 0px 0px 4px 4px;
 
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
-  
-  &:nth-last-child(-n + 4) {
-    margin-bottom: 0;
-  }
+  // &:nth-child(4n) {
+  //   margin-right: 0;
+  // }
+
+  // &:nth-last-child(-n + 4) {
+  //   margin-bottom: 0;
+  // }
 }
 
 .follow-list {
@@ -69,5 +70,5 @@
   &:focus {
     color: $primary-white-color;
     background-color: $link-color;
-    }
+  }
 }

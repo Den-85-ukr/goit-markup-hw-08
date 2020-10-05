@@ -17,6 +17,7 @@ Use a better box model (opinionated).
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: 1px solid tomato;
 }
 
 /**
@@ -98,7 +99,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -182,9 +183,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -237,7 +238,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -312,7 +313,6 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -340,7 +340,10 @@ img {
   display: block;
   color: #212121;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 26px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -358,7 +361,6 @@ img {
 }
 
 .button {
-  display: inline-block;
   padding: 10px 32px;
   color: #ffffff;
   background-color: #2196f3;
@@ -367,8 +369,8 @@ img {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  text-decoration: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
   border-radius: 4px;
 }
 
@@ -444,11 +446,6 @@ img {
 }
 
 /* Форма */
-.form {
-  display: flex;
-  flex-direction: column;
-}
-
 .form-field {
   position: relative;
   display: block;
@@ -554,7 +551,7 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #188CE8;
+  background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -564,18 +561,14 @@ img {
 }
 
 .page-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #ffffff;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
-}
-
-.page-header .flexbox {
-  align-items: center;
 }
 
 /* nav */
@@ -647,10 +640,9 @@ img {
 
 /* Hero */
 .hero {
-  height: 600px;
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
+  padding: 118px 20px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bcg-mini.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -659,11 +651,6 @@ img {
 }
 
 .hero-content {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 700px;
   text-align: center;
 }
 
@@ -673,61 +660,41 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.615;
   letter-spacing: 0.06em;
 }
 
 /* Особенности-features */
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .features .title {
-  margin: 0 0 10px 0;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .features .text {
-  margin: 0;
   color: #757575;
   font-size: 14px;
   line-height: 1.7;
+  text-align: center;
 }
 
 .features-iconbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-}
-
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.features-item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.features-item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.features-item:nth-last-child(-n + 4) {
-  margin-bottom: 0;
 }
 
 .features-icon {
@@ -737,6 +704,10 @@ img {
 }
 
 /* Чем мы занимаемся */
+.what-we-do {
+  display: none;
+}
+
 .what-we-do .title {
   margin-left: auto;
   margin-right: auto;
@@ -793,18 +764,14 @@ img {
 
 /* Наша команда */
 .team {
-  padding-top: 94px;
+  padding-top: 60px;
   background-color: #f5f4fa;
 }
 
 .team .title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
 }
 
@@ -822,25 +789,11 @@ img {
   text-align: center;
 }
 
-.team-list {
-  display: flex;
-}
-
 .team-item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 26px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.team-item:nth-last-child(-n + 4) {
-  margin-bottom: 0;
 }
 
 .follow-list {
@@ -859,16 +812,16 @@ img {
 
 /* Постоянные клиенты */
 .clients {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .clients-title {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
 }
@@ -876,21 +829,18 @@ img {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients-item {
-  margin-right: 30px;
-}
-
-.clients-item:last-child {
-  margin-right: 0;
+  margin: 15px;
+  flex-basis: calc((100% - 2 * 30px) / 2);
 }
 
 .clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 90px;
   padding: 0;
   border: 1px solid #afb1b8;
@@ -1053,16 +1003,11 @@ footer {
 .content-box {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  align-items: baseline;
-}
-
-.follow-box {
-  margin-left: 70px;
-  margin-right: 93px;
+  text-align: center;
 }
 
 .adds {
+  margin-bottom: 60px;
   color: #ffffff;
   font-size: 14px;
   line-height: 1.7;
@@ -1071,8 +1016,7 @@ footer {
 }
 
 .adds-text {
-  margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .auth-footer {
@@ -1080,7 +1024,10 @@ footer {
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
-  font-style: normal;
+}
+
+.auth-footer.mail {
+  margin-bottom: 8px;
 }
 
 .follow-title {
@@ -1132,15 +1079,7 @@ footer {
 
 /* Форма */
 .footer-form {
-  display: flex;
-  align-items: flex-end;
-  margin: 0;
-  width: 570px;
-}
-
-.footer-form-field {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .footer-form-icon {
@@ -1151,8 +1090,8 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1165,8 +1104,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: 13px 28px;
-  margin: 0;
   height: 50px;
   font-weight: 700;
   font-size: 16px;

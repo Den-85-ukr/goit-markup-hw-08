@@ -1,141 +1,150 @@
- /* Footer */
- footer {
-    background-color: #2f303a;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-  }
-  
-  .content-box {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  
-    display: flex;
-    align-items: baseline;
-  }
-  
-  .follow-box {
-    margin-left: 70px;
-    margin-right: 93px;
-  }
-  
-  .adds {
-    color: $primary-white-color;
-    font-size: 14px;
-    line-height: 1.7;
-    text-decoration: none;
-    font-style: normal;
-  }
-  
-  .adds-text {
-    margin-top: 0;
-    margin-bottom: 9px;
-  }
-  
-  .auth-footer {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    line-height: 1.7;
-    text-decoration: none;
-    font-style: normal;
-  }
-  
-  .follow-title {
-    display: block;
-    margin-bottom: 20px;
-    margin-right: 0;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.7;
-    text-transform: uppercase;
-    color: $primary-white-color;
-  }
-  
-  .follow-list {
-    @include centeredFlex();
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-  }
-  
-  .follow-link {
-    @include centeredFlex();
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    border-radius: 50%;
-  
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-  
-  .follow-link.join {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: $primary-white-color;
-    
-    &:hover,
-    &:focus {
+/* Footer */
+footer {
+  background-color: #2f303a;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.content-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  // display: flex;
+  // align-items: baseline;
+}
+
+// .follow-box {
+//   margin-left: 70px;
+//   margin-right: 93px;
+// }
+
+.adds {
+  margin-bottom: 60px;
+  color: $primary-white-color;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.adds-text {
+  margin-bottom: 8px;
+}
+
+.auth-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.auth-footer.mail {
+  margin-bottom: 8px;
+}
+
+.follow-title {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+
+.follow-list {
+  @include centeredFlex();
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.follow-link {
+  @include centeredFlex();
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.follow-link.join {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $primary-white-color;
+
+  &:hover,
+  &:focus {
     background-color: $link-color;
-    }
   }
-  
-  .follow-item {
-    margin-right: 10px;
-  }
-  
-  .follow-icon {
-    fill: currentColor;
-    width: 20px;
-    height: 20px;
-  }
-  
-  /* Форма */
-  .footer-form {
-    display: flex;
-    align-items: flex-end;
-    margin: 0;
-    width: 570px;
-  }
-  
-  .footer-form-field {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-form-icon {
-    margin-left: 10px;
-  }
-  
-  .footer-form-input {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-    margin-right: 12px;
-    width: 358px;
-    
-    color: $primary-white-color;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: inherit;
-  }
-  
-  .footer-form-btn {
-    @include centeredFlex();
-    // display: flex;
-    // align-items: center;
-    padding: 13px 28px;
-    margin: 0;
-    height: 50px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: $primary-white-color;
-    background-color: $link-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-  }
+}
+
+.follow-item {
+  margin-right: 10px;
+}
+
+.follow-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+/* Форма */
+// .footer-form {
+//   display: flex;
+//   align-items: flex-end;
+//   margin: 0;
+//   width: 570px;
+// }
+
+// .footer-form-field {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.footer-form {
+  text-align: center;
+}
+
+.footer-form-icon {
+  margin-left: 10px;
+}
+
+.footer-form-input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  // margin-right: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  color: $primary-white-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+}
+
+.footer-form-btn {
+  @include centeredFlex();
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13px 28px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  background-color: $link-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
