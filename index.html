@@ -40,7 +40,7 @@
               ></use>
             </svg>
           </button>
-          <div class="menu-container is-open" id="menu-container" data-menu>
+          <div class="menu-container" id="menu-container" data-menu>
             <div class="nav-box">
               <ul class="list site-nav">
                 <li class="menu-item">
@@ -53,7 +53,7 @@
               </ul>
             </div>
             <div class="contacts-box">
-              <ul class="list auth-nav flexbox">
+              <ul class="list auth-nav">
                 <li class="menu-item">
                   <a href="mailto:info@devstudio.com" class="link"
                     ><svg class="auth-icon" width="16" height="12">
@@ -78,11 +78,11 @@
     </header>
     <main>
       <!-- Главный контейнер -->
-      <section class="container hero">
+      <section class="section hero">
         <!-- Герой! -->
         <div class="hero-content">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button tupe="button" class="button" data-modal-open>
+          <button type="button" class="button" data-modal-open>
             Заказать услугу
           </button>
           <!-- <a href="#" class="button" data-modal-open>Заказать услугу</a> -->
@@ -190,27 +190,40 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-item">
-              <img
-                src="./images/mobile/mini/product-designer.jpg"
-                alt="Фото дизайнера продукта"
-              />
-              <!-- <picture>
-                <source
+              <picture>
+                <source 
                   srcset="
                     ./images/mobile/mini/product-designer.webp    1x,
-                    ./images/mobile/mini/product-designer.webp@2x 2x
-                  "
-                  type="image/webp"
+                    ./images/mobile/mini/product-designer.webp@2x 2x" 
+                    type="image/webp" 
                 />
-                <img
+                <source
+                  srcset="
+                    ./images/desktop/mini/product-designer.jpg    1x,
+                    ./images/desktop/mini/product-designer.jpg@2x 2x
+                  "
+                  media="(min-width: 1200)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/mini/product-designer.jpg    1x,
+                    ./images/tablet/mini/product-designer.jpg@2x 2x
+                  "
+                  media="(min-width: 768)"
+                />
+                <source
                   srcset="
                     ./images/mobile/mini/product-designer.jpg    1x,
                     ./images/mobile/mini/product-designer.jpg@2x 2x
                   "
+                  media="(max-width: 767)"
+                />
+                <img
+                  class="team-img"
                   src="./images/mobile/mini/product-designer.jpg"
                   alt="Фото дизайнера продукта"
                 />
-              </picture> -->
+              </picture>
               <h3 class="name">Игорь Демьяненко</h3>
               <p lang="en" class="biz">Product Designer</p>
               <ul class="list follow-list">
@@ -494,13 +507,13 @@
             ><span class="accent inverse">Studio</span>
           </a>
           <address class="adds">
-            <p class="adds-text">г. Киев, пр-т Леси Украинки, 26<br /></p>
+            <p class="adds-text">г. Киев, пр-т Леси Украинки, 26</p>
             <a href="mailto:info@example.com" class="auth-footer mail"
-              >info@example.com<br
-            /></a>
+              >info@example.com
+            </a>
             <a href="tel:+380991111111" class="auth-footer tell"
-              >+38 099 111 11 11</a
-            >
+              >+38 099 111 11 11
+            </a>
           </address>
         </div>
         <div class="follow-box">
@@ -549,7 +562,7 @@
               placeholder="E-mail"
             />
           </div>
-          <button tupe="button" class="footer-form-btn">
+          <button type="button" class="footer-form-btn">
             <span>Подписаться</span
             ><svg class="footer-form-icon" height="24" width="24">
               <use href="./images/svg/symbol-defs.svg#icon-icon-send"></use>
@@ -562,7 +575,7 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button tupe="button" class="btn-close" data-modal-close>
+        <button type="button" class="btn-close" data-modal-close>
           <svg class="icon-close">
             <use href="./images/svg/symbol-defs.svg#icon-form-close-x"></use>
           </svg>

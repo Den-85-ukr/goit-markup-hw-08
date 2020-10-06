@@ -315,13 +315,13 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -338,12 +338,12 @@ img {
 }
 
 .section {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-bottom: 94px;
+    margin-bottom: 94px;
   }
 }
 
@@ -356,14 +356,24 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
 /* Лого */
 .logo {
-  margin: 0;
-  display: block;
   color: #212121;
   font-family: "Raleway-Bold", sans-serif;
   font-weight: 700;
   font-size: 24px;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -375,8 +385,7 @@ img {
   color: #ffffff;
 }
 
-.content-box .logo {
-  margin-right: 0;
+.address-box .logo {
   margin-bottom: 20px;
 }
 
@@ -652,6 +661,15 @@ img {
   .menu-container.is-open {
     display: block;
   }
+  .nav-box {
+    margin-bottom: 60px;
+  }
+  .nav-box .menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .auth-nav .menu-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .site-nav .link {
@@ -672,7 +690,6 @@ img {
 .site-nav .link.current::after {
   content: "";
   position: absolute;
-  bottom: -33px;
   left: 0;
   display: block;
   width: 100%;
@@ -682,7 +699,7 @@ img {
 }
 
 .auth-nav .link {
-  color: var(--primary-grey-color);
+  color: #757575;
   text-decoration: none;
 }
 
@@ -697,16 +714,27 @@ img {
 
 /* Hero */
 .hero {
-  height: 400px;
   max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   padding: 118px 60px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bcg-mini.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #c4c4c4;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mini/hero-bcg.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/mini/hero-bcg@2x.jpg");
+  }
 }
 
 .hero-content {
@@ -718,19 +746,20 @@ img {
   margin-bottom: 30px;
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
-  font-size: 26px;
   font-weight: 900;
-  line-height: 1.615;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
 }
 
 /* Особенности-features */
 .features {
-  padding-top: 60px;
+  width: 100%;
 }
 
 .features .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -743,17 +772,22 @@ img {
   color: #757575;
   font-size: 14px;
   line-height: 1.7;
-  text-align: center;
 }
 
 .features-iconbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 450px;
-  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background: #f5f4fa;
   border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .features-item:not(:nth-last-child(1)) {
+    margin-bottom: 30px;
+  }
 }
 
 .features-icon {
@@ -824,10 +858,13 @@ img {
 /* Наша команда */
 .team {
   padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 0;
   background-color: #f5f4fa;
 }
 
 .team .title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
@@ -842,10 +879,16 @@ img {
 }
 
 .team .biz {
+  margin-top: 10px;
+  margin-bottom: 16px;
   color: #757575;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.team .team-img {
+  margin-bottom: 30px;
 }
 
 .team-item {

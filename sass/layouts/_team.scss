@@ -1,14 +1,13 @@
 /* Наша команда */
 .team {
   padding-top: 60px;
-
+  padding-bottom: 60px;
+  margin-bottom: 0;
+  
   background-color: #f5f4fa;
 
   .title {
-    // margin-left: auto;
-    // margin-right: auto;
-    // margin-top: 0;
-    // margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-weight: 700;
     font-size: 28px;
@@ -24,10 +23,16 @@
   }
 
   .biz {
+    margin-top: 10px;
+    margin-bottom: 16px;
     color: $primary-gray-color;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+  }
+
+  .team-img {
+    margin-bottom: 30px;
   }
 }
 
