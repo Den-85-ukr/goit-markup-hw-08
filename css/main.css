@@ -899,6 +899,12 @@ h6 {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (max-width: 767px) {
+  .team-item .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .follow-list {
   margin-bottom: 30px;
 }
