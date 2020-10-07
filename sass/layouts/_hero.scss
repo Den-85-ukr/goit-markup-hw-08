@@ -1,6 +1,6 @@
 /* Hero */
 .hero {
-  max-width: 480px;
+  // max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   padding: 118px 60px;
@@ -12,7 +12,6 @@
 
 @media screen and (max-width: 767px) {
   .hero {
-    height: 400px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
