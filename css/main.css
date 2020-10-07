@@ -438,6 +438,42 @@ h6 {
   display: none;
 }
 
+.follow-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.follow-link.join {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.follow-link.join:hover, .follow-link.join:focus {
+  background-color: #2196f3;
+}
+
+.follow-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.follow-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -728,13 +764,13 @@ h6 {
 @media screen and (max-width: 767px) {
   .hero {
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mini/hero-bcg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-bcg.jpg);
   }
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/mini/hero-bcg@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero-bcg@2x.jpg");
   }
 }
 
@@ -900,7 +936,7 @@ h6 {
 }
 
 @media screen and (max-width: 767px) {
-  .team-item .team-item:not(:last-child) {
+  .team-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1149,42 +1185,6 @@ footer {
   line-height: 1.7;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.follow-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.follow-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.follow-link.join {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-}
-
-.follow-link.join:hover, .follow-link.join:focus {
-  background-color: #2196f3;
-}
-
-.follow-item {
-  margin-right: 10px;
-}
-
-.follow-icon {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
 }
 
 /* Форма */
