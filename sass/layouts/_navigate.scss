@@ -26,6 +26,7 @@
       display: block;
     }
   }
+
   .nav-box {
     margin-bottom: 60px;
 
@@ -38,13 +39,21 @@
   }
 }
 
-// .menu-item .link {
-//   @include centeredFlex();
-// }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .site-nav {
+    display: flex;
 
-// .menu-item:not(:last-child) {
-//   margin-right: 50px;
-// }
+    & .menu-item:not(:last-child) {
+     margin-right: 50px;
+    }
+  }
+}
 
 .site-nav .link {
   color: $primary-black-color;
