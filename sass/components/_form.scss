@@ -69,7 +69,8 @@
 }
 
 .checkbox-label {
-  padding-left: 12px;
+  display: inline-block;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -93,12 +94,12 @@
 
 .checkbox-text {
   color: $primary-gray-color;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
 }
 
 .form-link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   color: $link-color;
 }
@@ -117,6 +118,7 @@
   background-color: #188ce8;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
   border-radius: 4px;
 
   &:active {

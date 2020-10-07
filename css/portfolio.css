@@ -386,6 +386,7 @@ h6 {
 }
 
 .address-box .logo {
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -622,6 +623,7 @@ footer {
 }
 
 .adds {
+  flex-direction: column;
   margin-bottom: 60px;
   color: #ffffff;
   font-size: 14px;
@@ -729,6 +731,7 @@ footer {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+  border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }

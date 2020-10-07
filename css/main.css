@@ -386,6 +386,7 @@ h6 {
 }
 
 .address-box .logo {
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -465,8 +466,6 @@ h6 {
   top: 50%;
   left: 50%;
   width: 100%;
-  max-width: 528px;
-  min-height: 581px;
   margin: 0;
   padding: 40px;
   border-radius: 4px;
@@ -572,7 +571,8 @@ h6 {
 }
 
 .checkbox-label {
-  padding-left: 12px;
+  display: inline-block;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -595,12 +595,12 @@ h6 {
 
 .checkbox-text {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
 }
 
 .form-link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   color: #2196f3;
 }
@@ -616,6 +616,7 @@ h6 {
   color: #ffffff;
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
   border-radius: 4px;
 }
 
@@ -1109,6 +1110,7 @@ footer {
 }
 
 .adds {
+  flex-direction: column;
   margin-bottom: 60px;
   color: #ffffff;
   font-size: 14px;
@@ -1216,6 +1218,7 @@ footer {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+  border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
