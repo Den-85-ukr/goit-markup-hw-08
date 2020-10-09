@@ -1,5 +1,12 @@
 .follow-list {
   display: flex;
+  
+  @media screen and (max-width: 1199px) {
+    justify-content: center;  
+  }   
+}
+
+.team-item .follow-list {
   justify-content: center;  
 }
 
