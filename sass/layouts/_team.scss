@@ -68,7 +68,7 @@
     &:nth-child(odd) {
       margin-right: 30px;
     }
-    &:nth-last-child(n + 2) {
+    &:nth-child(-n + 2) {
       margin-bottom: 30px;
     }
   }

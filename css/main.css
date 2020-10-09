@@ -17,7 +17,6 @@ Use a better box model (opinionated).
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 1px solid tomato;
 }
 
 /**
@@ -443,12 +442,7 @@ li {
 
 .follow-list {
   display: flex;
-}
-
-@media screen and (max-width: 1199px) {
-  .follow-list {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .follow-link {
@@ -622,9 +616,10 @@ li {
 
 .checkbox-icon {
   display: inline-block;
+  margin-right: -1px;
   width: 16px;
   height: 15px;
-  border: 1px solid #212121;
+  border: 2px solid #212121;
   background-color: #ffffff;
   border-radius: 2px;
 }
@@ -700,6 +695,7 @@ li {
     padding: 60px 15px;
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+    z-index: 99;
   }
   .menu-container.is-open {
     display: block;
@@ -735,8 +731,7 @@ li {
     padding-bottom: 32px;
   }
   .contacts-box {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 32px;
     font-size: 12px;
     line-height: 1.67;
   }
@@ -746,8 +741,6 @@ li {
   .nav-box {
     margin-left: 93px;
     margin-right: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
   .contacts-box {
     font-size: 14px;
@@ -786,6 +779,12 @@ li {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav .link.current::after {
+    bottom: -32px;
+  }
 }
 
 .auth-nav .link {
@@ -1102,7 +1101,7 @@ li {
   .team-item:nth-child(odd) {
     margin-right: 30px;
   }
-  .team-item:nth-last-child(n + 2) {
+  .team-item:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }
@@ -1202,6 +1201,7 @@ li {
 .filters-list .link.current {
   background-color: #2196f3;
   color: #ffffff;
+  border: 1px solid transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -1259,6 +1259,7 @@ li {
 .filters-list .link:hover, .filters-list .link:focus {
   background-color: #2196f3;
   color: #ffffff;
+  border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
@@ -1436,9 +1437,8 @@ footer {
 
 /* Форма */
 @media screen and (min-width: 1200px) {
-  .footer-form {
+  .footer-form-field {
     display: flex;
-    align-items: center;
   }
 }
 

@@ -76,10 +76,11 @@
 
 .checkbox-icon {
   display: inline-block;
+  margin-right: -1px;
   width: 16px;
   height: 15px;
 
-  border: 1px solid $primary-black-color;
+  border: 2px solid $primary-black-color;
   background-color: $primary-white-color;
   border-radius: 2px;
 }

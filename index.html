@@ -236,7 +236,6 @@
                     ./images/desktop/product-designer@2x.jpg 2x"
                   class="team-img"
                   src="./images/desktop/product-designer.jpg"
-                  width="270"
                   alt="Фото дизайнера продукта"/>
               </picture>
               <h3 class="name">Игорь Демьяненко</h3>
@@ -296,7 +295,7 @@
                                   ./images/tablet/frontend-developer@2x.jpg 2x,
                                   ./images/desktop/frontend-developer.jpg    1x,
                                   ./images/desktop/frontend-developer@2x.jpg 2x" class="team-img"
-                  src="./images/desktop/frontend-developer.jpg" width="270" alt="Фото фронтенд разработчика" />
+                  src="./images/desktop/frontend-developer.jpg" alt="Фото фронтенд разработчика" />
               </picture>
               <h3 class="name">Ольга Репина</h3>
               <p lang="en" class="biz">Frontend Developer</p>
@@ -355,7 +354,7 @@
                                                 ./images/tablet/marketing@2x.jpg 2x,
                                                 ./images/desktop/marketing.jpg    1x,
                                                 ./images/desktop/marketing@2x.jpg 2x" class="team-img"
-                src="./images/desktop/marketing.jpg" width="270" alt="Фото маркетолога" />
+                src="./images/desktop/marketing.jpg" alt="Фото маркетолога" />
               </picture>
               <h3 class="name">Николай Тарасов</h3>
               <p lang="en" class="biz">Marketing</p>
@@ -414,7 +413,7 @@
                                                               ./images/tablet/ui-designer@2x.jpg 2x,
                                                               ./images/desktop/ui-designer.jpg    1x,
                                                               ./images/desktop/ui-designer@2x.jpg 2x" class="team-img"
-                  src="./images/desktop/ui-designer.jpg" width="270" alt="Фото ЮИ дизайнера" />
+                  src="./images/desktop/ui-designer.jpg" alt="Фото ЮИ дизайнера" />
               </picture>
               <h3 class="name">Михаил Ермаков</h3>
               <p lang="en" class="biz">UI Designer</p>
@@ -565,11 +564,10 @@
           </ul>
           </div>
           <div class="footer-box">
+            <b class="follow-title">Подпишитесь на рассылку</b>
             <form class="footer-form">
             <div class="footer-form-field">
-              <label for="footer-mail" class="footer-form-lable follow-title"
-                >Подпишитесь на рассылку</label
-              >
+              <label for="footer-mail" class="footer-form-lable"></label>
               <input
               type="email"
               class="footer-form-input"
@@ -578,13 +576,13 @@
               placeholder="E-mail"
               autocomplete="off"
               />
-            </div>
-            <button type="button" class="footer-form-btn">
-              <span>Подписаться</span
-              ><svg class="footer-form-icon" height="24" width="24">
-                <use href="./images/svg/symbol-defs.svg#icon-icon-send"></use>
-              </svg>
-            </button>                 
+              <button type="button" class="footer-form-btn">
+                <span>Подписаться</span
+                ><svg class="footer-form-icon" height="24" width="24">
+                  <use href="./images/svg/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>            
+            </div>                
           </form>
         </div>
       </div>
@@ -640,7 +638,7 @@
             <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
             <a href="#" class="form-link">Условия договора</a>
           </label>
-          <button class="form-btn flexbox">Отправить</button>
+          <button type="button" class="form-btn flexbox">Отправить</button>
         </form>
       </div>
     </div>
