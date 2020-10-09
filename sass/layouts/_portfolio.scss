@@ -41,12 +41,12 @@
   .portfolio-item {
     width: calc((100% - 15px * 4) / 2);
     margin: 15px;
-    // &:nth-child(odd) {
-    //   margin-right: 30px;
-    // }
-    // &:nth-last-child(n + 2) {
-    //   margin-bottom: 30px;
-    // }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    width: calc((100% - 15px * 6) / 3); 
   }
 }
 

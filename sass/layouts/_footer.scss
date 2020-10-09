@@ -9,15 +9,20 @@ footer {
 .content-box {
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
-  
+    
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
  
- // align-items: baseline;
+  @media screen and (max-width: 1199px) {
+     text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
 }
 
 .footer-box {
@@ -42,12 +47,6 @@ footer {
 		}
 	}
 }
-
-
-// .follow-box {
-//   margin-left: 70px;
-//   margin-right: 93px;
-// }
 
 .adds {
   flex-direction: column;
@@ -86,20 +85,11 @@ footer {
 }
 
 /* Форма */
-// .footer-form {
-//   display: flex;
-//   align-items: flex-end;
-//   margin: 0;
-//   width: 570px;
-// }
-
-// .footer-form-field {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-.footer-form {
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer-form-icon {
@@ -110,7 +100,6 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  // margin-right: 12px;
   margin-bottom: 20px;
   width: 100%;
   max-width: 450px;
@@ -121,6 +110,11 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .footer-form-btn {
